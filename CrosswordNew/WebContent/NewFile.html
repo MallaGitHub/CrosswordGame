@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control"
+	content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" href="assets/css/myBell.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"
+	type="text/javascript"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script
+	src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js"
+	type="text/javascript"></script>
+<link
+	href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+	rel="stylesheet" type="text/css" />
+
+<title>Crossword</title>
+<style type="text/css">
+.ui-widget-header {
+	border: 1px solid #1f4e14;
+	background: #6891a0d6;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	padding: .2em 1em;
+	position: relative;
+}
+</style>
+<script type="text/javascript">
+	function test1() {
+		test2();
+	}
+
+	function test2() {
+		$(function() {
+			$("#dialog11").dialog({
+				resizable : false,
+				modal : true,
+				title : "Status",
+				width : 260,
+				height : 170,
+				buttons : {
+					"Ok" : function() {
+						$(this).dialog("close");
+					}
+				}
+			});
+		});
+	}
+</script>
+</head>
+
+<body>
+
+	// And the div containing the confirmation text should be somewhere on
+	the page
+	<!-- <div id="dialog-confirm" style="height: 160px">Progress of the
+		crossword will be lost. Do you want to continue?</div> -->
+	<div id="dialogSuccess"
+		style="display: none; width: 170px; height: 155px;">
+		<img alt="warning" src="img/tick41.png" height="35px" width="100px"
+			align="middle">
+	</div>
+	<input type="button" id="btnShow" value="Show Popup" onclick="test1()" />
+
+	<div id="notify">
+		<i class="fa fa-bell" aria-hidden="true"><span>MR</span></i>
+	</div>
+
+</body>
+</html>
